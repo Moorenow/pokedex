@@ -22,10 +22,28 @@ pnpm install
 npm i g @nestjs/cli
 ```
 
-4. Levantar la base de datos
+4. Clonar el archivo __.env.template__ y renombrar la copia a __.env__
+
+
+5. Llenar las variables de entorno definidas en el __.env__
+
+
+6. Levantar la base de datos
 
 ```
 docker-compose up -d
+```
+
+7. Ejecutar proyecto de manera local
+
+```
+pnpm start:dev
+```
+
+8. Reconstruir la base de datos con el seeder
+
+```
+http://localhost:3000/api/v2/seed
 ```
 
 ## Stack usado
