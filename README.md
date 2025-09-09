@@ -52,16 +52,8 @@ http://localhost:3000/api/v2/seed
 * Llenar las variables de entorno de produccion
 * Crear la nueva imagen
 
-### En caso de no existir
-
 ```
 docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
-```
-
-### En caso de que ya exista la imagen
-
-```
-docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
 ```
 
 ## Stack usado
